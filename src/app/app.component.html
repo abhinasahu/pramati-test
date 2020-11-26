@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="full-image" *ngIf="imageUrl">
+  <img src="{{imageUrl}}">
+</div>
+<div (click)="handleNext()">Next</div>
+<div class="record" *ngFor="let data of threeSetData">
+  <img (click)="displayFullImage(data.avatar_url)" class="image-small" src="{{data.avatar_url}}">
+  <div class=" details">
+    <span>Login: </span>{{data.id}}
+    <br>
+    <span>Type: </span>{{data.type}}
+  </div>
+</div>
+<div (click)="handlePrev()">Prev</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+.record {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    position: relative;
+    float: left;
+}
+.image-small {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+.details {
+    float: right;
+    position: relative;
+    top: 70px;
+    right: 10px;
+}
